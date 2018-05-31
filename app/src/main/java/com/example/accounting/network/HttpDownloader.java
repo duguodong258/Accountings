@@ -20,6 +20,7 @@ public class HttpDownloader {
     private URL url = null;
 
 
+
     public String download(String urlStr) {            //download 函数，实现下载后返回字符串。
         StringBuffer sb = new StringBuffer();
         String line = null;
