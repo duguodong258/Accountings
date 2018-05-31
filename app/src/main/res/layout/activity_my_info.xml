@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.example.accounting.widget.FlexibleView
+        android:id="@+id/flexibleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@drawable/heimu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </com.example.accounting.widget.FlexibleView>
+
+
+    <ImageView
+        android:id="@+id/iv_headBg"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/center_bg"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="130dp"
+        android:src="@drawable/head"/>
+</RelativeLayout>

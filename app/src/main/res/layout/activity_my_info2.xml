@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.example.accounting.widget.ZoomInScrollView
+        android:id="@+id/zoomScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_root"
+                android:background="@drawable/center_bg"
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_head"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/head"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="1">
+                        <TextView
+                            android:text="关注"
+                            android:textColor="@color/white"
+                            style="@style/style_widthW_heightW"/>
+                        <TextView
+                            android:text="89"
+                            android:textColor="@color/white"
+                            style="@style/style_widthW_heightW"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="1">
+                        <TextView
+                            android:text="粉丝"
+                            android:textColor="@color/white"
+                            style="@style/style_widthW_heightW"/>
+                        <TextView
+                            android:text="12330"
+                            android:textColor="@color/white"
+                            style="@style/style_widthW_heightW"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="1">
+                        <TextView
+                            android:text="收藏"
+                            android:textColor="@color/white"
+                            style="@style/style_widthW_heightW"/>
+                        <TextView
+                            android:text="25"
+                            android:textColor="@color/white"
+                            style="@style/style_widthW_heightW"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@id/flexibleView"
+                android:background="@drawable/heimu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.example.accounting.widget.ZoomInScrollView>
+
+</RelativeLayout>

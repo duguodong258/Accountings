@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/huoshan"
+    tools:context="com.example.accounting.activity.MainActivity">
+
+    <com.example.accounting.widget.FlexibleView
+        android:id="@+id/flexibleView"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_total_money"
+            android:text="剩余: 1600 ¥"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            style="@style/style_widthW_heightW"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            style="@style/style_widthM_heightW">
+            <LinearLayout
+                style="@style/style_ll">
+                <TextView
+                    android:text="购物"
+                    style="@style/style_widthW_heightW"
+                    android:textColor="@color/white"/>
+
+                <ImageView
+                    android:src="@drawable/gouwu"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/pb_shop"
+                android:layout_marginLeft="10dp"
+                android:progress="100"
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                android:progressDrawable="@drawable/spend_progress_bg"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_shop_total"
+                android:text="200 ¥"
+                style="@style/style_widthW_heightW"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/iv_shop_edit"
+                style="@style/style_edit_money"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            style="@style/style_widthM_heightW">
+            <LinearLayout
+                style="@style/style_ll">
+                <TextView
+                    android:text="餐饮"
+                    style="@style/style_widthW_heightW"
+                    android:textColor="@color/white"/>
+
+                <ImageView
+                    android:src="@drawable/canyin"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/pb_eat"
+                android:layout_marginLeft="10dp"
+                android:progress="100"
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                android:progressDrawable="@drawable/spend_progress_bg"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_eat_total"
+                android:text="1000 ¥"
+                style="@style/style_widthW_heightW"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/iv_eat_edit"
+                style="@style/style_edit_money"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            style="@style/style_widthM_heightW">
+            <LinearLayout
+                style="@style/style_ll">
+                <TextView
+                    android:text="交通"
+                    style="@style/style_widthW_heightW"
+                    android:textColor="@color/white"/>
+
+                <ImageView
+                    android:src="@drawable/jiaotong"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/pb_traffic"
+                android:layout_marginLeft="10dp"
+                android:progress="100"
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                android:progressDrawable="@drawable/spend_progress_bg"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_traffic_total"
+                android:text="100 ¥"
+                style="@style/style_widthW_heightW"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/iv_traffic_edit"
+                style="@style/style_edit_money"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            style="@style/style_widthM_heightW">
+            <LinearLayout
+                style="@style/style_ll">
+                <TextView
+                    android:text="其他"
+                    style="@style/style_widthW_heightW"
+                    android:textColor="@color/white"/>
+
+                <ImageView
+                    android:src="@drawable/qita"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/pb_other"
+                android:layout_marginLeft="10dp"
+                android:progress="100"
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                android:progressDrawable="@drawable/spend_progress_bg"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_other_total"
+                android:text="300 ¥"
+                style="@style/style_widthW_heightW"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/iv_other_edit"
+                style="@style/style_edit_money"/>
+        </LinearLayout>
+
+    </com.example.accounting.widget.FlexibleView>
+
+    <include layout="@layout/spend_edit"/>
+
+</RelativeLayout>
